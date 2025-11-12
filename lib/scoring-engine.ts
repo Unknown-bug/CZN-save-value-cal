@@ -24,6 +24,11 @@ export interface DeletionRecord {
   hasEpi: boolean // whether this deletion has an epiphany
 }
 
+export interface DupeRecord {
+  order: number // dupe order number
+  hasEpi: boolean // whether this dupe has an epiphany
+}
+
 export interface EquipmentAndUnique {
   equipment: number // 0 pts, always saved
   unique: number // 0 pts, always saved
