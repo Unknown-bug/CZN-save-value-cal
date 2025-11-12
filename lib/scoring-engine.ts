@@ -18,6 +18,12 @@ export interface CopyRecord {
   count: number // total number of copy events in this run
 }
 
+export interface DeletionRecord {
+  order: number // deletion order number
+  isStartingCard: boolean // whether this is a starting card
+  hasEpi: boolean // whether this deletion has an epiphany
+}
+
 export interface EquipmentAndUnique {
   equipment: number // 0 pts, always saved
   unique: number // 0 pts, always saved
